@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lizards & Their World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #228b22;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #228b22;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #228b22;
+            padding-bottom: 10px;
+        }
+
+        #intro p {
+            font-size: 1.2em;
+        }
+
+        .species-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .species-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .species-card:hover {
+            transform: scale(1.02);
+        }
+
+        .species-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .species-card h3 {
+            margin: 10px;
+            color: #228b22;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #228b22;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lizards & Their World</h1>
+        <nav>
+            <ul>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#habitats">Habitats</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Discover the Amazing Lizards</h2>
+        <p>Lizards are a diverse group of reptiles found in many habitats across the world. From tiny geckos to large monitor lizards, explore their fascinating lives and the efforts to protect them.</p>
+    </section>
+
+    <section id="species">
+        <h2>Popular Lizard Species</h2>
+        <div class="species-container">
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1608440633636-1f0d3fa2b7f4" alt="Green Iguana" />
+                <h3>Green Iguana</h3>
+                <p>A large, herbivorous lizard native to Central and South America, known for its vibrant green color and impressive size.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1609092930844-2b5b4b4a17b0" alt="Leopard Gecko" />
+                <h3>Leopard Gecko</h3>
+                <p>A small, nocturnal gecko popular as a pet, recognized for its distinctive spots and easy care.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1616070506584-4f8e2da2bae4" alt="Komodo Dragon" />
+                <h3>Komodo Dragon</h3>
+                <p>The largest living lizard, native to Indonesia, known for its powerful build and hunting prowess.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitats">
+        <h2>Habitats & Lives</h2>
+        <p>Lizards inhabit a wide range of environments, including forests, deserts, grasslands, and urban areas. Their adaptations allow them to thrive in both terrestrial and arboreal settings.</p>
+        <ul>
+            <li>Forests: Dense canopies and understories.</li>
+            <li>Deserts: Arid regions with extreme temperatures.</li>
+            <li>Grasslands: Open spaces rich in insects and plants.</li>
+            <li>Urban areas: Gardens, parks, and city streets.</li>
+        </ul>
+    </section>
+
+    <section id="conservation">
+        <h2>Conservation & Challenges</h2>
+        <p>Many lizard species face threats from habitat destruction, the pet trade, invasive species, and climate change. Conservation efforts focus on habitat preservation, captive breeding, and public education.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery of Lizards</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1608440633636-1f0d3fa2b7f4" alt="Green Iguana" />
+            <img src="https://images.unsplash.com/photo-1609092930844-2b5b4b4a17b0" alt="Leopard Gecko" />
+            <img src="https://images.unsplash.com/photo-1616070506584-4f8e2da2bae4" alt="Komodo Dragon" />
+            <img src="https://images.unsplash.com/photo-1623175211621-8d9a7f8d0f7b" alt="Chameleon" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lizard World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
