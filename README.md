@@ -3,8 +3,7 @@ An educational website devoted to reptilies species and their lives.
 
 # Reptile Enthusiast Repository 🦎🐍🦖
 
-![Build Status](https://img.shields.io/github/workflow/status/reptiloudus/world-of-reptilies/Build)
-![License](https://img.shields.io/github/license/reptiloudus/workd-of-reptilies)
+![License](https://img.shields.io/github/license/reptiloudus/world-of-reptilies)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
 ---
