@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reptile Species & Their Lives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f0f8f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2e8b57;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2e8b57;
+            padding-bottom: 10px;
+        }
+
+        #intro p {
+            font-size: 1.2em;
+        }
+
+        .species-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .species-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .species-card:hover {
+            transform: scale(1.02);
+        }
+
+        .species-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .species-card h3 {
+            margin: 10px;
+            color: #2e8b57;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reptile Species & Their Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#habitats">Habitats</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Welcome to the World of Reptiles</h2>
+        <p>Discover fascinating facts, learn about various species, their habitats, and how we can help protect these incredible creatures.</p>
+    </section>
+
+    <section id="species">
+        <h2>Popular Reptile Species</h2>
+        <div class="species-container">
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1597297444445-2c84b1d8e4b7" alt="Chameleon" />
+                <h3>Chameleon</h3>
+                <p>Chameleons are known for their color-changing abilities and their long, sticky tongues used to catch prey.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1601758123923-2f7b7bde8b8f" alt="Green Tree Python" />
+                <h3>Green Tree Python</h3>
+                <p>This python is arboreal, vibrant green, and often found in rainforest canopies in New Guinea and Australia.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1604362467530-1f9d9c04b4d4" alt="Leopard Gecko" />
+                <h3>Leopard Gecko</h3>
+                <p>Leopard geckos are popular pets, known for their spotted patterns and gentle nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitats">
+        <h2>Habitats & Lives</h2>
+        <p>Reptiles inhabit diverse environments, from deserts and rainforests to grasslands and wetlands. Their adaptations help them survive in these varied conditions.</p>
+        <ul>
+            <li>Desert Reptiles: Adapted to hot, arid environments.</li>
+            <li>Rainforest Reptiles: Thrive in humid, lush forests.</li>
+            <li>Grassland Reptiles: Survive in open plains with seasonal changes.</li>
+        </ul>
+    </section>
+
+    <section id="conservation">
+        <h2>Conservation & Protection</h2>
+        <p>Many reptile species face threats from habitat loss, climate change, and illegal trade. Conservation efforts are crucial to preserve their diversity and ensure their survival.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Reptile Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1616585766634-7c1d6b04303f" alt="Reptile 1" />
+            <img src="https://images.unsplash.com/photo-1591465993574-8ba7a8a8f5a4" alt="Reptile 2" />
+            <img src="https://images.unsplash.com/photo-1600134002784-2f8f4f4b6fbe" alt="Reptile 3" />
+            <img src="https://images.unsplash.com/photo-1616585766634-7c1d6b04303f" alt="Reptile 4" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Reptile World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
