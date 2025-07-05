@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turtles & Tortoises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #00695c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #00695c;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00695c;
+            padding-bottom: 10px;
+        }
+
+        #intro p {
+            font-size: 1.2em;
+        }
+
+        .species-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .species-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .species-card:hover {
+            transform: scale(1.02);
+        }
+
+        .species-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .species-card h3 {
+            margin: 10px;
+            color: #00695c;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #00695c;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turtles & Tortoises</h1>
+        <nav>
+            <ul>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#habitats">Habitats</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Explore the World of Turtles and Tortoises</h2>
+        <p>Turtles and tortoises are some of the oldest reptiles, with remarkable adaptations and diverse species. Discover their unique lives, habitats, and the importance of protecting them.</p>
+    </section>
+
+    <section id="species">
+        <h2>Popular Turtles & Tortoises</h2>
+        <div class="species-container">
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1578985892424-4f4ea9f0b8d0" alt="Galápagos Tortoise" />
+                <h3>Galápagos Tortoise</h3>
+                <p>The largest tortoise species, known for their impressive size and slow movements, native to the Galápagos Islands.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Leatherback Sea Turtle" />
+                <h3>Leatherback Sea Turtle</h3>
+                <p>The largest sea turtle, distinguished by its leathery shell and incredible long-distance migrations.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1576475361574-7f8f4a0e22f7" alt="Russian Tortoise" />
+                <h3>Russian Tortoise</h3>
+                <p>A small tortoise species, popular among pet owners, native to dry regions of Central Asia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitats">
+        <h2>Habitats & Lives</h2>
+        <p>Turtles and tortoises occupy a variety of habitats, from terrestrial deserts and grasslands to aquatic environments like oceans, lakes, and rivers. Their adaptations help them survive in these diverse ecosystems.</p>
+        <ul>
+            <li>Freshwater: Lakes, rivers, and ponds.</li>
+            <li>Marine: Oceans and seas.</li>
+            <li>Terrestrial: Dry forests, grasslands, and deserts.</li>
+        </ul>
+    </section>
+
+    <section id="conservation">
+        <h2>Conservation & Challenges</h2>
+        <p>Many turtle and tortoise species are endangered due to habitat loss, illegal pet trade, pollution, and climate change. Global efforts focus on habitat protection, legal regulations, and raising awareness.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery of Turtles & Tortoises</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1578985892424-4f4ea9f0b8d0" alt="Galápagos Tortoise" />
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Leatherback Sea Turtle" />
+            <img src="https://images.unsplash.com/photo-1576475361574-7f8f4a0e22f7" alt="Russian Tortoise" />
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Box Turtle" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Turtle & Tortoise World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
