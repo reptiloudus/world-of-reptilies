@@ -45,3 +45,5 @@ To get started, clone this repository:
 ```bash
 git clone https://github.com/reptiloudus/world-of-reptilies
 ```
+
+Now go to the `src/` directory and open any interesting page in your browser. Welcome to the wonderful world of reptiles!
