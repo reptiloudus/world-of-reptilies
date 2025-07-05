@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snakes & Their Lives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #8b0000;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 10px;
+        }
+
+        #intro p {
+            font-size: 1.2em;
+        }
+
+        .species-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .species-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .species-card:hover {
+            transform: scale(1.02);
+        }
+
+        .species-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .species-card h3 {
+            margin: 10px;
+            color: #8b0000;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Snakes & Their Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="#species">Species</a></li>
+                <li><a href="#habitats">Habitats</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Discover the World of Snakes</h2>
+        <p>Snakes are fascinating reptiles with diverse species that inhabit various environments around the globe. Learn about different types, their habitats, and conservation efforts to protect them.</p>
+    </section>
+
+    <section id="species">
+        <h2>Popular Snake Species</h2>
+        <div class="species-container">
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1604308570938-4d7e705d4f7f" alt="King Cobra" />
+                <h3>King Cobra</h3>
+                <p>The world's longest venomous snake, known for its impressive size and hood-display when threatened.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1603779620554-0d0e5f40d0b6" alt="Ball Python" />
+                <h3>Ball Python</h3>
+                <p>A popular pet snake, known for its docile nature and beautiful patterns in shades of brown and gold.</p>
+            </div>
+            <div class="species-card">
+                <img src="https://images.unsplash.com/photo-1611341238912-4b0b17f8f4e9" alt="Corn Snake" />
+                <h3>Corn Snake</h3>
+                <p>This non-venomous snake is admired for its vibrant colors and pattern resembling maize.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitats">
+        <h2>Habitats & Lives</h2>
+        <p>Snakes occupy a wide variety of habitats, including forests, deserts, grasslands, and wetlands. Their adaptations allow them to thrive in diverse conditions worldwide.</p>
+        <ul>
+            <li>Rainforests: Rich biodiversity, humid environment.</li>
+            <li>Deserts: Adapted to extreme heat and scarce water.</li>
+            <li>Grasslands: Open areas with plenty of prey.</li>
+            <li>Wetlands: Swamps and marshes with abundant water sources.</li>
+        </ul>
+    </section>
+
+    <section id="conservation">
+        <h2>Conservation & Challenges</h2>
+        <p>Many snake species face threats from habitat destruction, pollution, and illegal hunting. Conservation programs focus on habitat preservation and public education to protect these vital reptiles.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Snake Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1611341238912-4b0b17f8f4e9" alt="Snake 1" />
+            <img src="https://images.unsplash.com/photo-1604308570938-4d7e705d4f7f" alt="Snake 2" />
+            <img src="https://images.unsplash.com/photo-1603779620554-0d0e5f40d0b6" alt="Snake 3" />
+            <img src="https://images.unsplash.com/photo-1611341238912-4b0b17f8f4e9" alt="Snake 4" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Snake World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
